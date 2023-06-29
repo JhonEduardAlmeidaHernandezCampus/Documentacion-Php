@@ -1,109 +1,217 @@
 <?php
 
-    print_r("CONSTANTES");
+    print_r("OPERADORES");
+
+
+                    /* Operadores aritméticos */
 
     /*
-    es un identificador (nombre) asociado a un valor que no puede cambiar durante la ejecución del script.
+    Suma (+): Se utiliza para sumar dos valores.
     */
 
-   
-
-
-    /*
-    Constantes numéricas:
-    */
-
-    define("PI", 3.1416);
-    define("GRAVEDAD", 9.8);
+    $resultado = 10 + 5; // $resultado será igual a 15
 
 
 
 
     /*
-    Constantes de cadena de texto:
+    Resta (-): Se utiliza para restar un valor de otro.
     */
 
-    $define("SALUDO", "Hola, bienvenido");
-    define("NOMBRE_EMPRESA", "Mi Empresa");    
-
+    $resultado = 10 - 5; // $resultado será igual a 5
+    
     
 
 
     /*
-    Constantes booleanas:
+    Multiplicación (*): Se utiliza para multiplicar dos valores.
     */
 
-    define("VERDADERO", true);
-    define("FALSO", false);
+    $resultado = 10 * 5; // $resultado será igual a 50
 
 
     
 
     /*
-    Constantes de arreglo:
+    División (/): Se utiliza para dividir un valor por otro.
     */
 
-    define("COLORES", ['rojo', 'verde', 'azul']);
-    define("MESES", array('enero', 'febrero', 'marzo'));
+    $resultado = 10 / 5; // $resultado será igual a 2
 
     
 
 
     /*
-    Constantes predefinidas:
+    Módulo (%): Se utiliza para obtener el resto de una división.
     */
 
-    echo PHP_VERSION; // Muestra la versión de PHP instalada
-    echo PHP_OS; // Muestra el sistema operativo en el que se está ejecutando PHP
+    $resultado = 10 % 3; // $resultado será igual a 1 (el resto de la división de 10 entre 3)
 
     
 
 
+                    /* Operadores comparación */
+
     /*
-    Constantes de fecha y tiempo:
+    Asignación (=): Se utiliza para asignar un valor a una variable.
     */
 
-    define("FECHA_ACTUAL", date("Y-m-d"));
-    define("HORA_ACTUAL", date("H:i:s"));
+    $x = 10; // La variable $x tendrá el valor 10
 
 
       
 
     /*
-    Constantes de rutas de archivos y directorios:
+    Asignación de suma (+=): Se utiliza para sumar un valor a una variable y asignar el resultado a la misma variable.
     */
 
-    define("RUTA_ARCHIVOS", "/var/www/archivos/");
-    define("RUTA_IMAGENES", RUTA_ARCHIVOS . "imagenes/");
+    $x = 5;
+    $x += 3; // Equivale a $x = $x + 3; La variable $x tendrá el valor 8
 
 
 
 
     /*
-    Constantes de expresiones regulares:
+    Asignación de resta (-=): Se utiliza para restar un valor a una variable y asignar el resultado a la misma variable.
     */
 
-    define("PATRON_EMAIL", "/^[\w-]+(\.[\w-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/i");
+    $x = 10;
+    $x -= 4; // Equivale a $x = $x - 4; La variable $x tendrá el valor 6    
 
 
 
 
     /*
-    Constantes de configuración:
+    Asignación de multiplicación (*=): Se utiliza para multiplicar una variable por un valor y asignar el resultado a la misma variable.
     */
 
-    define("TAMANO_MAXIMO", 1024); // Tamaño máximo permitido en kilobytes
-    define("NUMERO_INTENTOS", 3); // Número máximo de intentos permitidos
+    $x = 3;
+    $x *= 2; // Equivale a $x = $x * 2; La variable $x tendrá el valor 6
 
 
 
 
     /*
-    Constantes de valores especiales:
+    Asignación de división (/=): Se utiliza para dividir una variable por un valor y asignar el resultado a la misma variable.
     */
 
-    define("NULO", null);
-    define("INFINITO_POSITIVO", INF);
-    define("INFINITO_NEGATIVO", -INF);
+    $x = 10;
+    $x /= 5; // Equivale a $x = $x / 5; La variable $x tendrá el valor 2
+
+
+
+
+    /*
+    Asignación de división (/=): Se utiliza para dividir una variable por un valor y asignar el resultado a la misma variable.
+    */
+
+    $x = 10;
+    $x %= 3; // Equivale a $x = $x % 3; La variable $x tendrá el valor 1 (resto de la división de 10 entre 3)
+
     
+
+
+                        /* Operadores comparación */
+
+
+    /*
+    Igual (==): Se utiliza para comprobar si dos valores son iguales.
+    */
+
+    $x = 5;
+    $y = 5;
+    $resultado = ($x == $y); // $resultado será igual a true
+
+
+
+
+    /*
+    Desigualdad (!=): Compara si dos valores no son iguales.
+    */
+
+    $x = 5;
+    $y = 10;
+    $resultado = ($x != $y); // $resultado será igual a true
+
+    
+
+
+    /*
+    Mayor que (>): Compara si el primer valor es mayor que el segundo.
+    */
+
+    $x = 10;
+    $y = 5;
+    $resultado = ($x > $y); // $resultado será igual a true
+
+
+
+
+    /*
+    Menor que (<): Compara si el primer valor es menor que el segundo.
+    */
+
+    $x = 10;
+    $y = 5;
+    $resultado = ($x < $y); // $resultado será igual a false
+    
+
+
+
+    /*
+    Mayor o igual que (>=): Compara si el primer valor es mayor o igual que el segundo.
+    */
+
+    $x = 10;
+    $y = 10;
+    $resultado = ($x >= $y); // $resultado será igual a true
+    
+
+
+
+    /*
+    Menor o igual que (<=): Compara si el primer valor es menor o igual que el segundo.
+    */
+
+    $x = 10;
+    $y = 5;
+    $resultado = ($x <= $y); // $resultado será igual a false
+    
+
+
+
+
+
+                            /* Operadores comparación */
+
+
+    /*
+    Y lógico (&& o and): Verifica si se cumplen dos condiciones.
+    */
+
+    $x = 5;
+    $y = 10;
+    $resultado = ($x > 0) && ($y < 20); // $resultado será igual a true, ya que ambas condiciones se cumplen
+    
+
+
+
+    /*
+    O lógico (|| o or): Verifica si se cumple al menos una de dos condiciones.
+    */
+
+    $x = 5;
+    $y = 10;
+    $resultado = ($x > 0) || ($y < 5); // $resultado será igual a true, ya que al menos una de las condiciones se cumple (la primera condición es verdadera)
+
+
+
+
+    /*
+    Negación lógica (! o not): Invierte el valor de una condición.
+    */
+    
+    $x = 5;
+    $resultado = !($x > 0); // $resultado será igual a false, ya que la condición original es verdadera, pero se invierte con el operador de negación
+
 ?>
